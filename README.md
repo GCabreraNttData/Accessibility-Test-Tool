@@ -29,13 +29,13 @@ Make sure you have Node.js installed. You can download it from:
 
 Copy the files from this repository to the root of your project:
 
-accesibilidad-axe.mjs
+accessibility-axe.mjs
 
 generate-report.js
 
 package.json
 
-.github/workflows/accesibilidad.yml
+.github/workflows/accessibility.yml
 
 **3\. Install dependencies**
 
@@ -47,11 +47,11 @@ npm install
 
 To analyze an HTML file (for example, index.html) run:
 
-node accesibilidad-axe.mjs index.html
+node accessibility-axe.mjs index.html
 
 Or in a specific folder:
 
-node accesibilidad-axe.mjs src/home/ (for example)
+node accessibility-axe.mjs src/home/ (for example)
 
 This will generate accessibility reports in the terminal or in files, depending on the script configuration.  
 <br/>Example:  
@@ -62,7 +62,7 @@ This will generate accessibility reports in the terminal or in files, depending 
 
 Create a .github/workflows folder at the root of your project.
 
-Inside, create a file called accesibilidad.yml (the file content is already configured).
+Inside, create a file called accessibility.yml (the file content is already configured).
 
 Commit and push these changes to your GitHub repository.
 
