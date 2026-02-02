@@ -5,7 +5,7 @@ Test your HTML code for accessibility errors before you push it. A GitHub workfl
 **Web Accessibility Testing Tool**  
 By Guillermo Cabrera González
 
-Summary
+**Summary**
 
 This tool allows you to analyze the accessibility of web pages using automated tools like Axe. In addition, you can automate these analyses on every push or pull request using GitHub Actions.
 
