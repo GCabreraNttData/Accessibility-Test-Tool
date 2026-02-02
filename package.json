@@ -9,6 +9,6 @@
     "jsdom": "^22.1.0"
   },
   "scripts": {
-    "accessibility-test": "node ./node_modules/accessibility-test-tool/accesibilidad-axe.mjs index.html"
+    "accessibility-test": "node ./node_modules/accessibility-test-tool/accesibilidad-axe.mjs"
   }
 }
