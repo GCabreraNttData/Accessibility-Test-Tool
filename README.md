@@ -2,7 +2,7 @@
 Test your HTML code for accessibility errors before you push it. A GitHub workflow will also test it after you push, in case you forget to check beforehand.
 
 
-**Web Accessibility Testing Tool**  
+**Accessibility Testing Tool for Developers**  
 By Guillermo Cabrera González
 
 **Summary**
