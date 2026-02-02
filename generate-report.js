@@ -18,7 +18,7 @@ if (fs.existsSync(jsonFile)) {
     md += '\n';
   }
 } else {
-  md = '# Accessibility Report\n\nNo se encontró accessibility-report.json.\n\nEl test de accessibility no se ejecutó correctamente o no se generó el informe JSON.';
+  md = '# Accessibility Report\n\naccessibility-report.json not found.\n\nThe accessibility test did not run correctly or the JSON report was not generated.';
 }
 
 fs.writeFileSync('accessibility-report.md', md);
@@ -44,7 +44,7 @@ if (fs.existsSync(jsonFile)) {
   }
   html += `</body>\n</html>`;
 } else {
-  html = `<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"UTF-8\"><title>Accessibility Report</title></head><body><h1>Accessibility Report</h1><p>No se encontró accessibility-report.json.<br>El test de accessibility no se ejecutó correctamente o no se generó el informe JSON.</p></body></html>`;
+  html = `<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"UTF-8\"><title>Accessibility Report</title></head><body><h1>Accessibility Report</h1><p>accessibility-report.json not found.<br>The accessibility test did not run correctly or the JSON report was not generated.</p></body></html>`;
 }
 fs.writeFileSync('accessibility-report.html', html);
 console.log('HTML report generated: accessibility-report.html');
