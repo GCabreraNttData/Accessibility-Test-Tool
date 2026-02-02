@@ -2,16 +2,16 @@
 Test your HTML code for accessibility errors before you push it. A GitHub workflow will also test it after you push, in case you forget to check beforehand.
 
 
-**Herramienta de tests automáticos de Accesibilidad web**  
-Por Guillermo Cabrera González - <gcabrerg@emeal.nttdata.com>
+**Web Accessibility Testing Tool**  
+By Guillermo Cabrera González
 
-Resumen
+Summary
 
-Este proyecto permite analizar la accesibilidad de páginas web usando herramientas automáticas como Axe. Además, puedes automatizar estos análisis en cada push o pull request usando GitHub Actions.
+This tool allows you to analyze the accessibility of web pages using automated tools like Axe. In addition, you can automate these analyses on every push or pull request using GitHub Actions.
 
-Paso a paso para instalar y usar en tu proyecto
+Step-by-step guide to install and use in your project
 
-**1\. Instalar:**
+**1\. Install:**
 
 \- Node.js
 
@@ -21,13 +21,13 @@ Paso a paso para instalar y usar en tu proyecto
 
 \- axe-core: npm install axe-core
 
-Asegúrate de tener Node.js instalado. Puedes descargarlo desde:
+Make sure you have Node.js installed. You can download it from:
 
 <https://nodejs.org/>
 
-**2\. Clonar o copiar los scripts**
+**2\. Clone or copy the script**
 
-Copia los archivos de este repositorio al root de tu proyecto:
+Copy the files from this repository to the root of your project:
 
 accesibilidad-axe.mjs
 
@@ -37,50 +37,50 @@ package.json
 
 .github/workflows/accesibilidad.yml
 
-**3\. Instalar dependencias**
+**3\. Install dependencies**
 
-Abre una terminal en la carpeta del proyecto y ejecuta:
+Open a terminal in the project folder and run:
 
 npm install
 
-**4\. Ejecutar los tests de accesibilidad**
+**4\. Run accessibility tests**
 
-Para analizar un archivo HTML (por ejemplo, index.html) ejecuta:
+To analyze an HTML file (for example, index.html) run:
 
 node accesibilidad-axe.mjs index.html
 
-O en una carpeta específica:
+Or in a specific folder:
 
-node accesibilidad-axe.mjs src/home/ (por ejemplo)
+node accesibilidad-axe.mjs src/home/ (for example)
 
-Esto generará reportes de accesibilidad en la terminal o en archivos, según la configuración de los scripts.  
-<br/>Ejemplo:  
+This will generate accessibility reports in the terminal or in files, depending on the script configuration.  
+<br/>Example:  
 <img width="886" height="214" alt="image" src="https://github.com/user-attachments/assets/824433e6-a1ee-4788-b567-65c7aee4f01f" />
 
 
-**5\. Automatizar con GitHub Actions**
+**5\. Automate with GitHub Actions**
 
-Crea una carpeta .github/workflows en la raíz de tu proyecto.
+Create a .github/workflows folder at the root of your project.
 
-Dentro, crea un archivo llamado accesibilidad.yml (el contenido del archivo ya está configurado)
+Inside, create a file called accesibilidad.yml (the file content is already configured).
 
-Haz commit y push de estos cambios a tu repositorio en GitHub.
+Commit and push these changes to your GitHub repository.
 
-**6\. Ver los resultados**
+**6\. View the results**
 
-Cada vez que hagas un push o pull request, GitHub ejecutará los tests de accesibilidad y mostrará los resultados en la pestaña "Actions" del repositorio.
+Every time you push or create a pull request, GitHub will run the accessibility tests and show the results in the "Actions" tab of the repository.
 
 <img width="886" height="305" alt="image" src="https://github.com/user-attachments/assets/7588b931-8c74-4755-85c9-ff73624b82c8" />
 
 
-Si falla porque encuentra un error de nivel CRITICAL o SERIOUS, se creará un "Artifact" dentro del workflow, con un descargable que contiene el informe en MD y en html.  
+If it fails because it finds a CRITICAL or SERIOUS level error, an "Artifact" will be created within the workflow, with a downloadable file containing the report in MD and HTML formats.  
 
 <img width="886" height="390" alt="image" src="https://github.com/user-attachments/assets/b6a18de8-fec0-4556-b0e5-8d481d21baab" />
 
 <br/>
 
-También se enviará un email al administrador avisando del error y con link al workflow en donde puede descargar el informe.  
+An email will also be sent to the administrator notifying them of the error and with a link to the workflow where the report can be downloaded.  
 
-Ejemplo de informe en html:  
+Example of an HTML report:  
 <img width="886" height="793" alt="image" src="https://github.com/user-attachments/assets/826d941f-84b6-4f25-94f8-a6887b19d376" />
 
