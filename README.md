@@ -15,17 +15,11 @@ Step-by-step guide to install and use in your project
 
 \- Node.js
 
-\- chalk: npm install chalk
-
-\- jsdom: npm install jsdom@22
-
-\- axe-core: npm install axe-core
-
 Make sure you have Node.js installed. You can download it from:
 
 <https://nodejs.org/>
 
-**2\. Clone or copy the script**
+**2\. Copy the files**
 
 Copy the files from this repository to the root of your project:
 
@@ -35,11 +29,11 @@ generate-report.js
 
 package.json
 
-.github/workflows/accessibility.yml
+.github/workflows/accessibility.yml (full folder)
 
 **3\. Install dependencies**
 
-Open a terminal in the project folder and run:
+Open a terminal in the project root folder and run:
 
 npm install
 
